@@ -69,12 +69,6 @@ app.get('/auth/google/callback',
 
 
 const templatePath = path.join(__dirname, "../templates")
- //functions for google auth
-
-
-
-
-
 
 //to get the hbs and mongodb connected
 app.use(express.json())
@@ -146,3 +140,5 @@ app.post("/login", async(req,res)=> {
 app.listen(3000,()=>{
    console.log("port connected");
 })
+
+module.exports = app;
